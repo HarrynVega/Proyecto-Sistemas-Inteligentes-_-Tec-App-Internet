@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Inteligente</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/musica.js"></script>
+    <audio id="player1" src="sound/tonge.mp3"></audio>
+    <audio id="player2" src="sound/wiishop.mp3"></audio>
+    <audio id="player3" src="sound/miichannel.mp3"></audio>
+    <audio id="player4" src="sound/pikiblainders.mp3"></audio>
+    <audio id="player5" src="sound/rickroleo.mp3"></audio>
+    <audio id="player6" src="sound/dripsillo.mp3"></audio>
+</head>
+<body>
+    <div class="box">
+        <button type="submit" name="submit" class="player" onclick="repro()">
+            <img src="img/logo.png" alt="Logo de soundfly" width="500" height="135" class="logo">
+        </button>
+    </div>
+    <div class="box">
+        <form class="forms" action="php/entrada.php" method="POST">
+            <p style="font-size: 5px;">⠀</p>
+
+            <p class="pregunta">Cuando escuchas música, en que estado de animo te encuentras normalmente</p>
+            <label for="Feliz" class="radio">
+                <input type="radio" id="Feliz" name="animo" value="Feliz" class="radio__input" required>
+                <div class="radio__radio"></div>
+                Feliz
+            </label>
+            <label for="Tiste" class="radio">
+                <input type="radio" id="Tiste" name="animo" value="Tiste" class="radio__input">
+                <div class="radio__radio"></div>
+                Tiste
+            </label>
+            <label for="Nomus" class="radio">
+                <input type="radio" id="Nomus" name="animo" value="Nomus" class="radio__input">
+                <div class="radio__radio"></div>
+                No escucho música
+            </label>
+            <br>
+            <br>
+
+            <p class="pregunta">¿Qué genero de música sueles escuchar con más frecuencia?</p>
+            <label for="Rock" class="radio">
+                <input type="radio" id="Rock" name="genmus" value="Rock" class="radio__input" required>
+                <div class="radio__radio"></div>
+                Rock
+            </label>
+            <label for="Pop" class="radio">
+                <input type="radio" id="Pop" name="genmus" value="Pop" class="radio__input">
+                <div class="radio__radio"></div>
+                Pop
+            </label>
+            <label for="Banda" class="radio">
+                <input type="radio" id="Banda" name="genmus" value="Banda" class="radio__input">
+                <div class="radio__radio"></div>
+                Banda/Corridos
+            </label>
+            <label for="Reggaeton" class="radio">
+                <input type="radio" id="Reggaeton" name="genmus" value="Reggaeton" class="radio__input">
+                <div class="radio__radio"></div>
+                Reggaeton
+            </label>
+            <label for="Cumbias" class="radio">
+                <input type="radio" id="Cumbias" name="genmus" value="Cumbias" class="radio__input">
+                <div class="radio__radio"></div>
+                Cumbias
+            </label>
+            <label for="Rap" class="radio">
+                <input type="radio" id="Rap" name="genmus" value="Rap" class="radio__input">
+                <div class="radio__radio"></div>
+                Rap
+            </label>
+            <label for="Electronica" class="radio">
+                <input type="radio" id="Electronica" name="genmus" value="Electronica" class="radio__input">
+                <div class="radio__radio"></div>
+                Electrónica
+            </label>
+            <label for="Nogen" class="radio">
+                <input type="radio" id="Nogen" name="genmus" value="Nogen" class="radio__input">
+                <div class="radio__radio"></div>
+                Ninguno
+            </label>
+            <br>
+            <br>
+
+            <p class="pregunta">Si escuchas audiolibros, ¿De qué genero sueles escuchar?</p>
+            <label for="Terroraud" class="radio">
+                <input type="radio" id="Terroraud" name="genaud" value="Terroraud" class="radio__input" required>
+                <div class="radio__radio"></div>
+                Terror
+            </label>
+            <label for="Comedia" class="radio">
+                <input type="radio" id="Comedia" name="genaud" value="Comedia" class="radio__input">
+                <div class="radio__radio"></div>
+                Comedia
+            </label>
+            <label for="Romantico" class="radio">
+                <input type="radio" id="Romantico" name="genaud" value="Romantico" class="radio__input">
+                <div class="radio__radio"></div>
+                Romantico
+            </label>
+            <label for="Ficcion" class="radio">
+                <input type="radio" id="Ficcion" name="genaud" value="Ficcion" class="radio__input">
+                <div class="radio__radio"></div>
+                Ficción
+            </label>
+            <label for="Nolib" class="radio">
+                <input type="radio" id="Nolib" name="genaud" value="Nolib" class="radio__input">
+                <div class="radio__radio"></div>
+                No escucho audiolibros
+            </label>
+            <br>
+            <br>
+
+            <p class="pregunta">¿Escuchas algún podcast?, ¿Sobre te índole?</p>
+            <label for="Terrorpod" class="radio">
+                <input type="radio" id="Terrorpod" name="genpod" value="Terrorpod" class="radio__input" required>
+                <div class="radio__radio"></div>
+                Terror
+            </label>
+            <label for="Politica" class="radio">
+                <input type="radio" id="Politica" name="genpod" value="Politica" class="radio__input">
+                <div class="radio__radio"></div>
+                Politica
+            </label>
+            <label for="Videojuegos" class="radio">
+                <input type="radio" id="Videojuegos" name="genpod" value="Videojuegos" class="radio__input">
+                <div class="radio__radio"></div>
+                Videojuegos
+            </label>
+            <label for="Musica" class="radio">
+                <input type="radio" id="Musica" name="genpod" value="Musica" class="radio__input">
+                <div class="radio__radio"></div>
+                Música
+            </label>
+            <label for="Cine" class="radio">
+                <input type="radio" id="Cine" name="genpod" value="Cine" class="radio__input">
+                <div class="radio__radio"></div>
+                Cine
+            </label>
+            <label for="Nopod" class="radio">
+                <input type="radio" id="Nopod" name="genpod" value="Nopod" class="radio__input">
+                <div class="radio__radio"></div>
+                No escucho podcast
+            </label>
+            <br>
+            <br>
+
+            <p class="pregunta">Por último, ¿Escucharías algo en una nueva aplicación similar a spotify pero completamente gratuita?</p>
+            <label for="Si" class="radio">
+                <input type="radio" id="Si" name="categoria" value="S" class="radio__input" required>
+                <div class="radio__radio"></div>
+                Si
+            </label>
+            <label for="No" class="radio">
+                <input type="radio" id="No" name="categoria" value="N" class="radio__input">
+                <div class="radio__radio"></div>
+                No
+            </label>
+            <br>
+            
+            <p style="font-size: 5px;">⠀</p>
+            <button type="submit" name="submit" class="boton">Enviar respuestas</button>
+            <p style="font-size: 5px;">⠀</p>
+        </form>
+    </div>
+</body>
+</html>
