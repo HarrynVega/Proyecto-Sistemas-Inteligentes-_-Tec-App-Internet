@@ -9,6 +9,7 @@ body {
     max-width: 100%;
     height: auto;
 }
+
 .player{
     width: 100%;
     background: none;
@@ -145,93 +146,32 @@ h2{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.frases{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 31%;
-    height: auto;
-    color: rgba(255, 255, 255, 0.8);
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    box-sizing: border-box;
-    text-align: center;
-}
-.frase{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 48%;
-    height: auto;
-    color: rgba(255, 255, 255, 0.8);
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    box-sizing: border-box;
-    text-align: center;
-}
 
-.result{
-    width: 48%;
-    height: auto;
-    background: rgba(150, 150, 150, 0.2);
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
-    margin: 10px;
-    box-sizing: border-box;
+ul{
+    padding-inline: 15%;
     color: rgba(255, 255, 255, 0.8);
     font-family: 'Roboto', sans-serif;
-}
-.lista{
-    color: rgba(255, 255, 255, 0.8);
-    font-family: 'Roboto', sans-serif;
-    margin-left: 10%;
-    font-size: 18px;
-    text-align: left;
-    margin-right: 10%;
-}
-li{
-    margin: 3px 0;
-}
+    font-size: 1.5rem;
+    text-align: center;
+    list-style-position: inside; /* UL bullets stay within their container */
+ }
+
 .grafica{
-    margin-left: 5%;
+    padding-inline: 5%;
     width: 90%;
     height: 60%;
 }
-.graficafinal{
-    margin-left: 5%;
-    width: 90%;
-    height: 550px;
-}
 
 @media screen and (max-width:1100px){
-    .result{
-        width: 45%;
-    }
-}
-@media screen and (max-width:1099px){
-    .result{
-        width: 90%;
-    }
-}
-@media screen and (max-width:600px){
-    .result{
-        width: 100%;
-    }
-}
-@media screen and (max-width:1099px){
     .titulo{
         left: 5%;
         width: 90%;
     }
 }
-@media screen and (max-width:600px){
+
+@media screen and (max-width:800px){
     .titulo{
         left: 5%;
         width: 90%;
-    }
-}
-@media screen and (max-width:500px){
-    .frases{
-        width: 28%;
     }
 }

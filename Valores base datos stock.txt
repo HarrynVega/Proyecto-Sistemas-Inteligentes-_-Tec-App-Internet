@@ -1,0 +1,16 @@
+INSERT INTO `encuesta` (`Animo`, `Musica`, `Audiolib`, `Podcast`, `Categoria`) VALUES
+('Feliz', 'Rock', 'Terroraud', 'Terrorpod', 'S'),
+('Feliz', 'Pop', 'Ficcion', 'Politica', 'N'),
+('Feliz', 'Rock', 'Ficcion', 'Terrorpod', 'N'),
+('Tiste', 'Pop', 'Terroraud', 'Terrorpod', 'S'),
+('Tiste', 'Pop', 'Nolib', 'Nopod', 'N'),
+('Feliz', 'Rock', 'Nolib', 'Nopod', 'S'),
+('Feliz', 'Pop', 'Nolib', 'Videojuegos', 'N'),
+('Tiste', 'Pop', 'Nolib', 'Terrorpod', 'S'),
+('Nomus', 'Nogen', 'Nolib', 'Nopod', 'N'),
+('Feliz', 'Rock', 'Ficcion', 'Nopod', 'S'),
+('Tiste', 'Pop', 'Terroraud', 'Terrorpod', 'N'),
+('Nomus', 'Nogen', 'Nolib', 'Terrorpod', 'S'),
+('Feliz', 'Pop', 'Terroraud', 'Terrorpod', 'N'),
+('Tiste', 'Rock', 'Nolib', 'Videojuegos', 'S'),
+('Nomus', 'Nogen', 'Nolib', 'Nopod', 'N');
