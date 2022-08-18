@@ -9,21 +9,23 @@ $(document).ready(function(){
             const myChart5 = new Chart(ctx, {
                 type: 'pie',
                 data: {
-                    labels: ['Ganancia 1º atributo', 'Ganancia 2º atributo', 'Ganancia 3º atributo', 'Ganancia 4º atributo'],
+                    labels: ['Ganancia 1º atributo', 'Ganancia 2º atributo', 'Ganancia 3º atributo', 'Ganancia 4º atributo', 'Ganancia Categoría'],
                     datasets: [{
                         label: 'Comparación de Ganancias',
-                        data: [data.atributo1_ganancia, data.atributo2_ganancia, data.atributo3_ganancia, data.atributo4_ganancia],
+                        data: [data.atributo1_ganancia, data.atributo2_ganancia, data.atributo3_ganancia, data.atributo4_ganancia, data.categoria_entropia],
                         backgroundColor: [
-                            'rgba(67, 255, 249, 0.5)', 
-                            'rgba(239, 255, 99, 0.5)', 
-                            'rgba(245, 64, 227, 0.5)',             
-                            'rgba(153, 102, 255, 0.5)'
+                            'rgba(64, 245, 239, 0.2)', 
+                            'rgba(255, 206, 86, 0.2)', 
+                            'rgba(255, 99, 132, 0.2)', 
+                            'rgba(245, 64, 227, 0.2)',             
+                            'rgba(153, 102, 255, 0.2)'
                         ],
                         borderColor: [
-                            'rgba(67, 255, 249, 0.8)', 
-                            'rgba(239, 255, 99, 0.8)', 
-                            'rgba(245, 64, 227, 0.8)',             
-                            'rgba(153, 102, 255, 0.8)'
+                            'rgba(64, 245, 239, 0.2)', 
+                            'rgba(255, 206, 86, 0.2)', 
+                            'rgba(255, 99, 132, 0.2)', 
+                            'rgba(245, 64, 227, 0.2)',             
+                            'rgba(153, 102, 255, 0.2)'
                         ],
                         borderWidth: 1
                     }]
@@ -38,6 +40,8 @@ $(document).ready(function(){
             $("#atributo2_ganancia").text("La ganancia del segundo atributo es de : "+data.atributo1_ganancia);
             $("#atributo3_ganancia").text("La ganancia del tercer atributo es de : "+data.atributo1_ganancia);
             $("#atributo4_ganancia").text("La ganancia del cuarto atributo es de : "+data.atributo1_ganancia);
+            $("#categoria_entropia").text("La ganancia de la prgunta de categoría es de : "+data.categoria_entropia);
+
         }
     })
 });
